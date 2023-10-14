@@ -12,9 +12,8 @@ gh repo clone RahmatjonIbrohimov/ToDo-App-DRF
 python3 manage.py runserver
 ```
 ## RoadMap
-```
-http://127.0.0.1:8000/todo/ -> Home Page
-http://127.0.0.1:8000/todo/<int:id>/ -> Ddetail Page
-http://127.0.0.1:8000/todo/new/ -> new add todo Page
-http://127.0.0.1:8000/todo/<int:id>/update/ -> update special todo 
-http://127.0.0.1:8000/todo/<int:id>/delete -> delete special todo
+- **GET** `/api/all/`: Hamma ToDo larni qaytaradi.
+- **POST** `/api/new`: Yangi ToDo qo'shadi.
+- **PATCH** `/api/id/update/`: Maxsus ID bo'yicha 'ToDo' ni yangilaydi.
+- **DETAIL** `/api/id`: Maxsus ID bo'yicha 'ToDo'ni detail qismini ko'rsatadi
+- **DELETE** `/api/id/delete`: 'ToDo' ni o'chiradi
